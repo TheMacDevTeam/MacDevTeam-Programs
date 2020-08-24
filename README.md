@@ -1,1 +1,2 @@
-# MacDevTeam-Programs
+# MacDevTeam - Programs
+## Table of contents
