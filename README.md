@@ -2,6 +2,8 @@
 
 ## Table of contents
 * [General Info](#general-info)
-* [Copyright]
+* [Copyright](#copyright)
 
 ## General Info
+
+## Copyright
