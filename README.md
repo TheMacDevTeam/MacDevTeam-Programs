@@ -1,5 +1,7 @@
 # MacDevTeam - Programs
 
 ## Table of contents
-* [General Info]
+* [General Info](#general-info)
 * [Copyright]
+
+## General Info
