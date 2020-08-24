@@ -1,9 +1,11 @@
 # MacDevTeam - Programs
 
-## Table of contents
+### Table of contents
 * [General Info](#general-info)
-* [Copyright](#copyright)
+* [Setup](#setup)
 
 ## General Info
+These programs are a creative works of the MacDevTeam.
 
-## Copyright
+## Setup
+To run the programs, download the folder and run the application.
