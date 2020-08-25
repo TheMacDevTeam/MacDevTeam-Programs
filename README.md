@@ -1,4 +1,4 @@
-# ![alt text](https://macdevteam.netlify.app/site_media/favicon/favicon.ico)  MacDevTeam - Programs
+# MacDevTeam - Programs
 * [General Info](#general-info)
 * [Setup](#setup)
 
