@@ -1,4 +1,4 @@
-# MacDevTeam - Programs ![Logo](./logo 150 x 150.png)
+# MacDevTeam - Programs ![tekst alternatywny](./logo 150 x 150.png)
 * [General Info](#general-info)
 * [Setup](#setup)
 
