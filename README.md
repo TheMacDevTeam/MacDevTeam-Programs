@@ -5,7 +5,7 @@
 * [Setup](#setup)
 
 ## General Info
-These programs are a creative works of the MacDevTeam.
+These programs are examples from the [MacDevTeam](https://macdevteam.netlify.app/) website.
 
 ## Setup
 To run the programs, download the folder and run the application.
