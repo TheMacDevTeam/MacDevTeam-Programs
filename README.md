@@ -1,4 +1,4 @@
-# MacDevTeam - Programs ![tekst alternatywny](logo 150 x 150.png)
+# ![alt text](https://macdevteam.netlify.app/site_media/favicon/favicon.ico)  MacDevTeam - Programs
 * [General Info](#general-info)
 * [Setup](#setup)
 
