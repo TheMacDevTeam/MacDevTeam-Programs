@@ -1,0 +1,537 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* CSS Document */
+
+/*---- Body ------------------------------------------------------------------*/
+
+body {
+    width: 100%;
+    margin: auto;
+    backgroun-color: #fff;
+	cursor: default;
+	user-select: none;
+}
+
+.dark_mode {
+	filter: invert(100%);
+	background-color: #000;
+}
+
+.main_content a {
+	color: #2186A1;
+	text-decoration: none;
+}
+.main_content a:hover {
+	color: #C03C48;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.video_container {
+	position: relative;
+	width: 100%;
+	display: block;
+	margin: 20px auto 10px;
+}
+
+.movie {
+/*	21:9*/
+	padding-top: 42.85%;
+}
+.wide_screen {
+/*	16:9*/
+	padding-top: 56.25%;
+}
+
+.video_container video, .video_container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*---- Page Content ----*/
+
+.main_content {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+    text-align: justify;
+    padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    color: #000;
+}
+
+h1 {
+	font-size: 5vh;
+}
+
+.img {
+	border-radius: 5px;
+	display: block;
+}
+.img.float_left {
+	float: left;
+	width: 20%;
+}
+.img.float_right {
+	float: right;
+	width: 30%;
+	margin: 10px 0 10px 10px;
+}
+.img.middle {
+	margin: 10px auto;
+	width: 80%;
+}
+
+.main_content section {
+	width: 90%;
+	padding: 0 10px 5px;
+	margin: 10px auto;
+	color: #000000;
+	border-bottom: solid 1px #ccc;
+}
+
+.main_content section .date {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.main_content section pre {
+	max-height: 70vh;
+	overflow-y: scroll;
+	border-radius: 5px;
+}
+
+/*---- Website Projects ----*/
+
+.projects hr {
+	margin: 0;
+	border: solid thin #E0E0E0;
+}
+
+.projects a {
+	margin: auto;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-decoration: none;
+	background-color: #FFF;
+	text-align: left;
+	color: #7C7C7C;
+	font-weight: 600;
+}
+.projects a img {
+	height: 27px;
+	width: 27px;
+	margin: auto 10px -5px 5px;
+	border-radius: 5px;
+}
+.projects a:hover {
+	background-color: #E0E0E0;
+	color: #7C7C7C;
+	text-decoration: none;
+}
+
+.projects {
+	display: block;
+	margin: 20px auto;
+}
+
+/*---- Parallax ----*/
+
+.parallax.index {
+	background-image: url("../site_media/images/html_code_on_laptop_screen.png");
+}
+
+.parallax {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.parallax.main {
+	height: 75vh;
+}
+
+.parallax.break {
+	margin: 20px 0 40px;
+	height: 50vh;
+}
+.parallax.break:last-of-type {
+	margin: 20px 0 0;
+}
+
+/*---- Nav all ----*/
+
+nav, footer {
+	color: #fff;
+	background-color: #2186A1;
+}
+
+nav, footer {
+	z-index: 99;
+}
+
+/*--- Desktop ---*/
+
+nav .desktop {
+	width: 60%;
+	padding: 0 20%;
+	top:0;
+	position: fixed;
+	height: 100px;
+	box-shadow: 0 0 10px 0 #ccc;
+	background-color: #2186A1;
+	z-index: 99;
+}
+
+nav .desktop .nav_logo_link img {
+	height: 65px;
+	margin: 25px 0 0;
+}
+nav .desktop #desktop_links, nav .desktop #desktop_links a, #experiments_desktop p {float: right;}
+nav .desktop #desktop_links a:not(.drop_down), #experiments_desktop p {
+	padding: 10px 10px;
+	font-size: 20px;
+	margin: 57px 0 0 0;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav .desktop #desktop_links div .drop_down_container .drop_down_link {
+	padding: 10px 5px;
+	font-size: 20px;
+	margin: 0;
+	text-decoration: none;
+	color: #fff;
+	background-color: #2186A1;
+	text-align: center;
+}
+
+nav .desktop #desktop_links div .drop_down_container {
+	position: fixed;
+    top: 95px;
+    right: 20%;
+	box-shadow: 0 0 3px 0 #000;
+}
+
+nav .desktop #desktop_links a.active, nav .desktop #desktop_links div .drop_down_container a.active {
+	color: #C6C6C6;
+}
+
+nav .desktop #desktop_links a:hover, #experiments_desktop:hover p, nav .desktop #desktop_links div .drop_down_container .drop_down_link:hover {
+	color: #114755;
+}
+
+nav .desktop #desktop_links a img, #experiments_desktop p img {
+	height: 13px;
+	margin: 0 0 -1px 4px;
+}
+
+/*Arrows*/
+nav .desktop #desktop_links a img[id^="up_"], #experiments_desktop p img[id^="up_"] {
+	display: inline;
+}
+nav .desktop #desktop_links a img[id^="down_"], #experiments_desktop p img[id^="down_"] {
+	display: none;
+}
+
+nav .desktop #desktop_links a:hover img[id^="down_"], #experiments_desktop:hover p img[id^="down_"] {
+	display: inline;
+}
+nav .desktop #desktop_links a:hover img[id^="up_"], #experiments_desktop:hover p img[id^="up_"] {
+	display: none;
+}
+
+/*Dropdown div*/
+#dropdown_Desktop_experiments {
+    width: 139.2px;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: all 450ms ease-in-out;
+    -moz-transition: all 450ms ease-in-out;
+    -ms-transition: all 450ms ease-in-out;
+    -o-transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out;
+}
+#dropdown_Desktop_experiments a {
+    width: 129.2px;
+}
+
+#experiments_desktop:hover #dropdown_Desktop_experiments{
+    height: 238px;
+}
+
+#experiments_desktop {
+	display: inline-block;
+	float: right;
+	height: 43px;
+	margin-top: 57px;
+}
+
+#experiments_desktop p {
+	margin-top: 0;
+}
+
+/*---- Tablet ----*/
+
+nav .tablet {
+	width: 75%;
+	padding: 0 12.5%;
+	top:0;
+	position: fixed;
+	height: 70px;
+	box-shadow: 0 0 10px 0 #ccc;
+	background-color: #2186A1;
+	z-index: 99;
+}
+
+nav .tablet .nav_logo_link img {
+	height: 50px;
+	margin: 10px 0 0;
+}
+nav .tablet #tablet_links, nav .tablet #tablet_links a, #experiments_tablet p {float: right;}
+nav .tablet #tablet_links a:not(.drop_down), #experiments_tablet p {
+	padding: 10px 10px;
+	font-size: 20px;
+	margin: 27px 0 0 0;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav .tablet #tablet_links div .drop_down_container .drop_down_link {
+	padding: 10px 5px;
+	font-size: 20px;
+	margin: 0;
+	text-decoration: none;
+	color: #fff;
+	background-color: #2186A1;
+	text-align: center;
+}
+
+nav .tablet #tablet_links div .drop_down_container {
+	position: fixed;
+    top: 65px;
+    right: 12.5%;
+	box-shadow: 0 0 3px 0 #000;
+}
+
+nav .tablet #tablet_links a.active, nav .tablet #tablet_links div .drop_down_container a.active {
+	color: #C6C6C6;
+}
+
+nav .tablet #tablet_links a:hover, #experiments_tablet:hover p, nav .tablet #tablet_links div .drop_down_container .drop_down_link:hover {
+	color: #114755;
+}
+
+nav .tablet #tablet_links a img, #experiments_tablet p img {
+	height: 13px;
+	margin: 0 0 -1px 4px;
+}
+
+nav .tablet #tablet_links a img[id^="up_"], #experiments_tablet p img[id^="up_"] {
+	display: inline;
+}
+nav .tablet #tablet_links a img[id^="down_"], #experiments_tablet p img[id^="down_"] {
+	display: none;
+}
+
+nav .tablet #tablet_links a:hover img[id^="down_"], #experiments_tablet:hover p img[id^="down_"] {
+	display: inline;
+}
+nav .tablet #tablet_links a:hover img[id^="up_"], #experiments_tablet:hover p img[id^="up_"] {
+	display: none;
+}
+
+#dropdown_Tablet_experiments {
+    width: 139.2px;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: all 450ms ease-in-out;
+    -moz-transition: all 450ms ease-in-out;
+    -ms-transition: all 450ms ease-in-out;
+    -o-transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out;
+}
+#dropdown_Tablet_experiments a {
+    width: 129.2px;
+}
+
+#experiments_tablet:hover #dropdown_Tablet_experiments{
+    height: 238px;
+}
+
+#experiments_tablet {
+	display: inline-block;
+	float: right;
+	height: 43px;
+	margin-top: 27px;
+}
+
+#experiments_tablet p {
+	margin-top: 0;
+}
+
+/*---- Mobile ----*/
+
+nav .mobile {
+	width: 100%;
+	padding: 0;
+	top:0;
+	position: fixed;
+	height: 48px;
+	box-shadow: 0 0 10px 0 #ccc;
+	background-color: #2186A1;
+	overflow: hidden;
+	z-index: 99;
+}
+
+nav .mobile .nav_logo_link img {
+	height: 30px;
+	margin: 10px 0 0 5%;
+}
+
+nav .mobile .icon {
+	width: 48px;
+	text-align: center;
+	display: block;
+	float: right;
+	color: #FFFFFF;
+	padding: 15px 0;
+	background-color: #ABABAB;
+}
+
+nav .mobile #mobile_links {
+	display: none;
+	position: fixed;
+	top: 48px;
+	left: 0;
+	width: 100%;
+	overflow-y: scroll;
+	background-color: #2186A1;
+	max-height: 75vh;
+}
+
+nav .mobile #mobile_links a, nav .mobile #mobile_links .mobile_nav_dropdown p {
+	display: block;
+	width: 90%;
+	padding: 10px 5%;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav .mobile #mobile_links .mobile_nav_dropdown {
+	height: 41px;
+	overflow: hidden;
+	width: 100%;
+}
+
+nav .mobile #mobile_links .mobile_nav_dropdown p {
+	margin: 0;
+}
+
+nav .mobile #mobile_links .mobile_nav_dropdown p img {
+	height: 11px;
+	margin-left: 5px;
+}
+nav .mobile #mobile_links .mobile_nav_dropdown p img[id^="up_"] {
+	display: inline;
+}
+nav .mobile #mobile_links .mobile_nav_dropdown p img[id^="down_"] {
+	display: none;
+}
+
+nav .mobile #mobile_links .mobile_nav_dropdown#experiments_mobile:hover {
+	height: 246px;
+	background-color: #2493B1;
+}
+nav .mobile #mobile_links .mobile_nav_dropdown#experiments_mobile:hover p, nav .mobile #mobile_links a:hover, nav .mobile #mobile_links .mobile_nav_dropdown#experiments_mobile .drop_down_container a:hover {
+	color: #114755;
+}
+
+nav .mobile #mobile_links .mobile_nav_dropdown#experiments_mobile:hover p img[id^="down_"] {
+	display: inline;
+}
+nav .mobile #mobile_links .mobile_nav_dropdown#experiments_mobile:hover p img[id^="up_"] {
+	display: none;
+}
+
+
+/*---- Footer ----*/
+
+#footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#footer .footer_nav_links {
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+#footer .footer_nav_links a {
+	color: #FFF;
+	text-decoration: none;
+}
+#footer .footer_nav_links a:hover {
+	text-decoration: underline;
+}
+
+#footer p {
+	margin: 5px auto 10px;
+}
+
+#footer .footer_project_links a {
+	margin: 10px auto;
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+}
+#footer .footer_project_links a:hover {
+	text-decoration: underline;
+}
+
+/*---- Scaling ----/
+/*-- Mobile --*/
+.main_content {
+    width: 90%;
+    margin: auto;
+}
+
+.mobile {display: block}
+.tablet, .desktop {display: none}
+
+/*-- Tablets --*/
+@media only screen and (min-width: 600px) {
+    .main_content {
+        width: 75%;
+    }
+	body {
+		margin-top: 70px;
+	}
+	.tablet {display: block}
+	.mobile, .desktop {display: none}
+}
+
+/*-- Laptop & Desktop --*/
+@media only screen and (min-width: 1383px) {
+    .main_content {
+        width: 60%;
+    }
+	body {
+		margin-top: 100px;
+	}
+	.desktop {display: block}
+	.mobile, .tablet {display: none}
+}
